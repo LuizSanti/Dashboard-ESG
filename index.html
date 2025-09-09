@@ -3,40 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - ESG</title>
+    <title>Dashboard - ESG Brasil</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <div class="header-section">
-    <h1>Dashboard ESG</h1>
+    <h1>Dashboard ESG Brasil</h1>
     <header class="header">
         <div class="header-item">Home</div>
-        <div class="header-item">Ambiental</div>
+        <div class="header-item"><a href="#ambiental"></a>Ambiental</div>
         <div class="header-item">Social</div>
         <div class="header-item">Governança</div>
     </header>
     </div>
 
-    <section class="ambiental">
-        <h2 class="pilares-esg" id="pilar-ambiental">Ambiental</h2>
-        <div class="cards-indicadores">
-            <div>
-                <h3>Emissões de CO2</h3>
-                <p>1,2M t</p>
-            </div>
-            <div>
-                <h3>Energia Renovável</h3>
-                <p>63%</p>
-            </div>
-            <div>
-                <h3>Desmatamento</h3>
-                <p>3500 KM^2</p>
-            </div>
-            <div>
-                <h3>Qualidade do Ar</h3>
-                <p>Boa</p>
+    <section class="ambiental" id="ambiental">
+        <div class="container">
+            <h2 class="pilares-esg" id="pilar-ambiental">Ambiental</h2>
+
+            <div class="grid-indicadores">
+                <div class="card-item">
+                    <h3>Emissões de CO<sub>2</sub></h3>
+                    <p class="vermelho">1,2M t</p>
+                </div>
+                <div class="card-item">
+                    <h3>Energia Renovável</h3>
+                    <p class="verde">63%</p>
+                </div>
+                <div class="card-item">
+                    <h3>Desmatamento</h3>
+                    <p class="bege">3500 KM<sup>2</sup></p>
+                </div>
+                <div class="card-item">
+                    <h3>Qualidade do Ar</h3>
+                    <p class="azul">Boa</p>
+                </div>
+
+                <div class="card-grafico-item">
+                    <div class="titulo-card">
+                    <h3>Evolução de CO<sub>2</sub></h3>
+                    </div>
+                    <div class="grafico">
+                        <p>Gráfico de linhas</p>
+                    </div>
+                </div>
+                <div class="card-grafico-item">
+                    <div class="titulo-card">
+                    <h3>Desmatamento por Estado</h3>
+                    </div>
+                    <div class="grafico">
+                        <p>Gráfico de Barras</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+    <section class="social">
+        <div class="container">
+            <h2 class="pilares-esg" id="pilar-social">Social</h2>
+
+            <div class="grid-indicadores">
+                <div class="card-item">
+                    <h3>Taxa de Escolaridade</h3>
+                    <p class="azul">92%</p>
+                </div>
+                <div class="card-item">
+                    <h3>Expectativa de Vida</h3>
+                    <p class="verde">76 anos</p>
+                </div>
+                <div class="card-item">
+                    <h3>Desigualdade</h3>
+                    <p class="vermelho">0,48</p>
+                </div>
+                <div class="card-item">
+                    <h3>Taxa de Emprego</h3>
+                    <p class="roxo">48%</p>
+                </div>
+
+                <div class="card-grafico-item">
+                    <div class="titulo-card">
+                    <h3>Educação por Região</h3>
+                    </div>
+                    <div class="grafico">
+                        <p>Gráfico de Barras</p>
+                    </div>
+                </div>
+                <div class="card-grafico-item">
+                    <div class="titulo-card">
+                    <h3>Evolução da Expectativa de Vida</h3>
+                    </div>
+                    <div class="grafico">
+                        <p>Gráfico de Linhas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="governanca">
+        <div class="container">
+            <h2 class="pilares-esg" id="pilar-governanca">Governança</h2>
+
+            <div class="grid-indicadores">
+                <div class="card-item">
+                    <h3>Transparência</h3>
+                    <p class="verde">82%</p>
+                </div>
+                <div class="card-item">
+                    <h3>Denúncias de Corrupção</h3>
+                    <p class="vermelho">1200</p>
+                </div>
+                <div class="card-item">
+                    <h3>Índice de Governança Digital</h3>
+                    <p class="azul">7.5/10</p>
+                </div>
+                <div class="card-item">
+                    <h3>Gastos Auditados</h3>
+                    <p class="roxo">R$ 950M</p>
+                </div>
+
+                <div class="card-grafico-item">
+                    <div class="titulo-card">
+                    <h3>Distribuição de Gastos</h3>
+                    </div>
+                    <div class="grafico">
+                        <p>Gráfico de Pizza</p>
+                    </div>
+                </div>
+                <div class="card-grafico-item">
+                    <div class="titulo-card">
+                    <h3>Denúncias por Região</h3>
+                    </div>
+                    <div class="grafico">
+                        <p>Gráfico de Barras</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
