@@ -12,28 +12,34 @@ body {
 }
 
 h1 {
-    text-align: center;
+    font-size: 30px;
     color: rgb(243, 242, 242);
     padding-bottom: 5px;
+    margin-left: 100px;
 }
 
 .header {
     display: flex;
-    justify-content: center;
-    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
     color: white;
 }
 
 .header-section {
-  background-color: #008000; 
-  padding: 20px 0;
+    background-color: #008000; 
+    padding: 20px 0;
 }
 
 .header-item {
-  padding: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease; 
-  border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    border-radius: 8px;
+}
+
+.header-items {
+    display: flex;
+    margin-right: 80px;
 }
 
 .header-item:hover {
