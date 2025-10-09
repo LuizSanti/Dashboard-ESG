@@ -3,150 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - ESG Brasil</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <div class="header-section">
-    <header class="header">
-        <h1>Dashboard ESG Brasil</h1>
+    <div class="container">
+        <header>
+            <h1>ToDo List</h1>
+        </header>
 
-        <div class="header-items">
-        <div class="header-item">Home</div>
-        <div class="header-item"><a href="#ambiental"></a>Ambiental</div>
-        <div class="header-item">Social</div>
-        <div class="header-item">Governança</div>
+        <div class="card">
+            <form id="formulario-adicionar">
+                <input id="entrada-tarefa" type="text" placeholder="Digite uma tarefa...">
+                <button type="submit">Adicionar</button>
+            </form>
+
+            <div class="controles">
+                <input id="entrada-busca" type="text" placeholder="Buscar...">
+                <select id="filtro">
+                    <option value="todas">Todas</option>
+                    <option value="ativas">Ativas</option>
+                    <option value="concluidas">Concluídas</option>
+                </select>
+                <button class="botao-limpar" id="limpar-acoes">Limpar todas</button>
+
+
+            </div>
+
+            <div class="lista-tarefas" id="lista-tarefas"></div>
+
         </div>
-    </header>
     </div>
 
-    <section class="ambiental" id="ambiental">
-        <div class="container">
-            <h2 class="pilares-esg" id="pilar-ambiental">Ambiental</h2>
-
-            <div class="grid-indicadores">
-                <div class="card-item">
-                    <h3>Emissões de CO<sub>2</sub></h3>
-                    <p class="vermelho">1,2M t</p>
-                </div>
-                <div class="card-item">
-                    <h3>Energia Renovável</h3>
-                    <p class="verde">63%</p>
-                </div>
-                <div class="card-item">
-                    <h3>Desmatamento (2025)</h3>
-                    <p id="desmatamento-geral" class="bege">Carregando...</p>
-                </div>
-                <div class="card-item">
-                    <h3>Qualidade do Ar</h3>
-                    <p class="azul">Boa</p>
-                </div>
-
-                <div class="card-grafico-item">
-                    <div class="titulo-card">
-                    <h3>Evolução de CO<sub>2</sub></h3>
-                    </div>
-                    <div class="grafico">
-                        <p>Gráfico de linhas</p>
-                    </div>
-                </div>
-                <div class="card-grafico-item">
-                    <div class="titulo-card">
-                    <h3>Desmatamento por Estado</h3>
-                    </div>
-                    <div class="grafico">
-                        <canvas id="graficoDesmatamento"></canvas>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="social">
-        <div class="container">
-            <h2 class="pilares-esg" id="pilar-social">Social</h2>
-
-            <div class="grid-indicadores">
-                <div class="card-item">
-                    <h3>Taxa de Escolaridade</h3>
-                    <p class="azul">92%</p>
-                </div>
-                <div class="card-item">
-                    <h3>Expectativa de Vida</h3>
-                    <p class="verde">76 anos</p>
-                </div>
-                <div class="card-item">
-                    <h3>Desigualdade</h3>
-                    <p class="vermelho">0,48</p>
-                </div>
-                <div class="card-item">
-                    <h3>Taxa de Emprego</h3>
-                    <p class="roxo">48%</p>
-                </div>
-
-                <div class="card-grafico-item">
-                    <div class="titulo-card">
-                    <h3>Educação por Região</h3>
-                    </div>
-                    <div class="grafico">
-                        <p>Gráfico de Barras</p>
-                    </div>
-                </div>
-                <div class="card-grafico-item">
-                    <div class="titulo-card">
-                    <h3>Evolução da Expectativa de Vida</h3>
-                    </div>
-                    <div class="grafico">
-                        <p>Gráfico de Linhas</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="governanca">
-        <div class="container">
-            <h2 class="pilares-esg" id="pilar-governanca">Governança</h2>
-
-            <div class="grid-indicadores">
-                <div class="card-item">
-                    <h3>Transparência</h3>
-                    <p class="verde">82%</p>
-                </div>
-                <div class="card-item">
-                    <h3>Denúncias de Corrupção</h3>
-                    <p class="vermelho">1200</p>
-                </div>
-                <div class="card-item">
-                    <h3>Índice de Governança Digital</h3>
-                    <p class="azul">7.5/10</p>
-                </div>
-                <div class="card-item">
-                    <h3>Gastos Auditados</h3>
-                    <p class="roxo">R$ 950M</p>
-                </div>
-
-                <div class="card-grafico-item">
-                    <div class="titulo-card">
-                    <h3>Distribuição de Gastos</h3>
-                    </div>
-                    <div class="grafico">
-                        <p>Gráfico de Pizza</p>
-                    </div>
-                </div>
-                <div class="card-grafico-item">
-                    <div class="titulo-card">
-                    <h3>Denúncias por Região</h3>
-                    </div>
-                    <div class="grafico">
-                        <p>Gráfico de Barras</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/script.js"></script>
 </body>
 </html>
